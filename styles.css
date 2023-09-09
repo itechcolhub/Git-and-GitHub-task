@@ -144,3 +144,13 @@ button:hover {
 .cta-button:hover {
     background-color: #0056b3;
 }
+
+/* Global styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7;
+    display: flex; /* Center vertically and horizontally */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    min-height: 100vh; /* Make sure the page takes at least the viewport height */
+}
