@@ -5,6 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up Page</title>
     <link rel="stylesheet" href="styles.css"> 
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var form = document.querySelector("form");
+            var username = document.getElementById("username");
+            var email = document.getElementById("email");
+            var password = document.getElementById("password");
+            var confirmPassword = document.getElementById("confirm-password");
+    
+            form.addEventListener("submit", function(event) {
+                event.preventDefault(); // Prevent form submission for this example
+    
+                // Perform client-side validation
+                if (password.value.length <= 4) {
+                    alert("Password must be greater than 4 characters. Please try again.");
+                } else if (password.value !== confirmPassword.value) {
+                    alert("Passwords do not match. Please try again.");
+                } else {
+                    // Validation passed; redirect to welcome page with username as a URL parameter
+                    var usernameValue = username.value;
+                    window.location.href = "welcome.html?username=" + encodeURIComponent(usernameValue);
+                }
+            });
+        });
+    </script>
 </head>
 <body>
     <div class="login-container"> <!-- Use the same class as the login page -->
