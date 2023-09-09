@@ -31,4 +31,28 @@
         </div>
     </div>
 </body>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        var form = document.querySelector("form");
+        var username = document.getElementById("username");
+        var password = document.getElementById("password");
+
+        form.addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent form submission for this example
+
+            // Perform client-side validation
+            if (password.value.length <= 4) {
+                alert("Password must be greater than 4 characters. Please try again.");
+            } else {
+                // Validation passed; redirect to welcome page with username as a URL parameter
+                var usernameValue = username.value;
+                redirectToWelcome(usernameValue);
+            }
+        });
+    });
+
+    function redirectToWelcome(username) {
+        window.location.href = "welcome.html?username=" + encodeURIComponent(username);
+    }
+</script>
 </html>
