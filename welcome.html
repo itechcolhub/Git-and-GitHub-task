@@ -10,6 +10,14 @@
 <body>
     <h1>Welcome to Our Website!</h1>
     <p>Hello, <span id="username"></span>!</p>
-    
+    <script>
+        // Get the username from the URL parameter
+        var urlParams = new URLSearchParams(window.location.search);
+        var username = urlParams.get("username");
+
+        // Display the username in the HTML
+        var usernameElement = document.getElementById("username");
+        usernameElement.textContent = username;
+    </script>
 </body>
 </head>
