@@ -1,0 +1,12 @@
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body.no-centering {
+    display: block;
+    justify-content: initial;
+    align-items: initial;
+    min-height: auto;
+}
+
