@@ -1,0 +1,221 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #212122; /* Main background color */
+    color: #fff; /* Text color */
+	overflow:hidden;
+}
+
+.header {
+    background-color: #212122;
+    text-align: center;
+    height: 7%;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center align text and logo */
+}
+
+.logo {
+    width: 52px; /* Adjust the width of the logo as needed */
+    height: 50px; /* Make the logo round */
+    border-radius: 50%; /* Make the logo round */
+    margin-left: 10px; /* Add some spacing between the logo and company name */
+}
+
+.container {
+    background-image: url("pic1.png"); /* Background image */
+    background-size: cover; /* Make the background image cover the container */
+    background-position: center; /* Center the background image */
+    display: flex;
+    flex-direction: column; /* Change to a column layout */
+    justify-content: center;
+    align-items: center;
+    height: 110vh; /* Slightly larger container */
+    background-color: #c0392b; /* Darker shade of red */
+    border-top: 2px solid #e74c3c; /* Add a top border using the sub color */
+    border-bottom: 2px solid #e74c3c; /* Add a bottom border using the sub color */
+}
+
+.form-container {
+  padding: 20px;
+
+}
+
+.info-container {
+    padding: 20px;
+}
+.c1{
+	 width: 70%; /* Info section takes 70% width */
+    max-width: 450px; /* Limit the maximum width of the info container */
+    padding: 20px;
+    background-color: #990f02; /* Apply sub color to the info section */
+    color: black; /* Text color changed to black-grey */
+    text-align: left; /* Move the text to the left */
+	border-radius:50px;
+	margin-top:-200px;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 75%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    background-color: #212122; /* Input background color */
+    color: #fff; /* Input text color */
+	font-size:16px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    width: 100%;
+    color: black; /* Label text color changed to black-grey */
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Move the text to the left */
+    margin-top: 5px; /* Add space between the checkbox and text */
+	font-size:16px;
+}
+
+input[type="checkbox"] {
+    border-radius: 50%; /* Make the checkbox round */
+    margin-right: 5px; /* Add space between the checkbox and text */
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.info-text {
+    font-size: 24px;
+    margin-bottom: 7px;
+}
+
+
+
+.register-link {
+    color: black;
+	font-size:18px;
+    text-decoration: underline;
+}
+input[type="checkbox"] {
+    appearance: none; /* Hide the default checkbox */
+    -webkit-appearance: none; /* Hide the default checkbox on webkit browsers */
+    width: 20px; /* Set the width and height to create a circle */
+    height: 20px;
+    border-radius: 50%; /* Make it a circle by setting border-radius to 50% */
+    border: 2px solid black; /* Add a border for the circle */
+    background-color: transparent; /* Make the background transparent */
+    cursor: pointer;
+    vertical-align: middle; /* Align it vertically with text */
+	margin-bottom:10px;
+}
+input[type="checkbox"]:checked {
+    background-color: black; /* Change the background color when checked */
+	border: 2px solid white;
+}
+
+.password-field {
+    display: flex;
+    align-items: center;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-left: 10px; /* Adjust the margin as needed */
+}
+#username{
+	margin-bottom:10px;
+}
+
+
+
+
+
+
+
+/* Additional CSS for Registration Page */
+#username-reg {
+    margin-bottom: 10px;
+}
+
+#confirm-password {
+    margin-bottom: 10px;
+}
+
+#birthdate {
+    margin-bottom: 10px;
+}
+
+.terms-link {
+    color: black;
+    text-decoration: underline;
+}
+
+.terms-link:hover {
+    text-decoration: underline;
+}
+
+.agree-terms {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 10px; /* Add space between the checkbox and text */
+    font-size: 16px;
+}
+
+
+/* Style for the birthdate field */
+.birthdate-field {
+    width: 75%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    background-color: #212122; /* Input background color */
+    color: #fff; /* Input text color */
+    font-size: 16px;
+    display: flex;
+    align-items: center; /* Center vertically */
+}
+
+.birthdate-field input[type="date"] {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: #fff;
+    flex: 1; /* Allow the input to take remaining space */
+}
+
+/* Move the calendar icon to the right */
+.birthdate-field input[type="date"]::-webkit-calendar-picker-indicator {
+    margin-left: auto;
+}
+
+#email {
+    width: 75%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    background-color: #212122; /* Input background color */
+    color: #fff; /* Input text color */
+    font-size: 16px;
+}
